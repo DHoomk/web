@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page2</title>
+    <link rel="icon" type="smiley.gif" href="/img/smiley.gif">
+
+    <style>
+      body {font-family: Arial, Helvetica, sans-serif; background: url("https://wallpapercave.com/wp/wp6425557.jpg") center center/cover fixed; display: flex; background-color: #d7bc26; }
+      * {box-sizing: border-box;}
+      .mySlides {display: none;}
+      img {vertical-align: middle;}
+
+      .as2{
+        border-radius: 5px;
+        background-color: #1c1a86;
+        padding: 20px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }.as1 {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid rgb(50, 154, 67);
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }.as{
+        box-sizing: border-box;
+        width: 100%;
+        border: solid #5B6DCD 10px;
+        padding: 5px;
+      }.input-1 {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      } .input-1:hover{background-color: #45a049;}
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      li {
+        float: left;
+      }
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+      .active {
+        background-color: #045aaa;
+      }
+      .text{
+          padding:20px;
+          margin-top:30px;
+          height:1500px;
+      }
+
+      input[type=text],select, textarea  {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        
+        
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        .container1 {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+
+       .container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 1200px;
+    }
+    .container2:hover .card{
+        filter: blur(10px);
+    }
+    .container2 .card:hover{
+        margin-top: -15px;
+        filter: blur(0px);
+    }
+    .card{
+        height: 500px;
+        width: 350px;
+        margin: 20px;
+        background: url("img1.JPG") center center/cover;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 0 50px #444;
+        transition: 0.4s;
+    }
+    .card:nth-child(2){
+        background: url("img2.JPG") center center/cover;
+    }
+    .card:nth-child(3){
+        background: url("img3.JPG") center center/cover;
+    }
+    .card h1{
+        position: absolute;
+        color: #fff;
+        font-weight: 500;
+        padding: 15px;
+        top: 310px;
+        transition: 0.8s;
+    }
+    .card:hover h1{
+        top: 500px;
+    }
+    .card .info{
+        position: absolute;
+        opacity: 0;
+        transition: 0.8s;
+        height: 500px;
+        width: 350px;
+        background: rgba(0,0,0,0.7);
+    }
+    .card:hover .info{
+        opacity: 1;
+    }
+    .card .info p{
+        padding: 10px 30px;
+        color: #fff;
+        font-weight: 400;
+    }
+    .card .info h2{
+        color: #fff;
+        font-weight: 400;
+        padding-top: 150px;
+        padding-left: 20px;
+        transition: 0.8s;
+    }
+    .card:hover .info h2{
+        padding-top: 20px;
+    }
+    .card .info a{
+        color: #3549fd;
+        font-weight: 400;
+        transition: 0.4s;
+    }
+    .card .info a:hover{
+        color: #234991;
+    }
+    .card .iframe{
+        width: 350px;
+        height: 300px;
+    }
+*/
+  
+
+
+</style>
+        
+</head>
+<body>
+  <ul>
+    <li><a class="active" href="#home.html">Home</a></li>
+    <li><a  href="page1.html" >News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact-us.html">About</a></li>
+</ul>
+
+  
+  <div class="container1">
+    <form action="/action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <label for="email"><b>mail</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required pattern="[A-Za-z @-.]{13}" title="Three letter country code" >
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required >
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+<div class="container2">
+  <div class="card">
+      <h1>Custom Dropdown List Using HTML CSS and JavaScript</h1>
+      <div class="info">
+          <iframe class="iframe" type="text/html" data-video="https://www.youtube.com/embed/bfnMb4GIr88" src="" title="YouTube video player" frameborder="0" autoplay; allowfullscreen></iframe>
+          <h2>Source Code: <a href="https://codepen.io/Andres-dev/pen/rNpoLwx" >CODE PEN</a></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quaerat eos cum molestias fugit architecto.</p>
+      </div>
+  </div>
+
+  <div class="card">
+      <h1>CSS Card with Hover Animation</h1>
+      <div class="info">
+          <iframe class="iframe" type="text/html" data-video="https://www.youtube.com/embed/mSNJaRkiW9w" src="" title="YouTube video player" frameborder="0" autoplay; allowfullscreen></iframe>
+          <h2>Source Code: <a href="https://codepen.io/Andres-dev/pen/LYerxLK" >CODE PEN</a></h2> 
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quaerat eos cum molestias fugit architecto.</p>
+      </div>
+  </div>
+
+ 
+</div>
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+</body>
+</html>
+<!--
+ <div class="card">
+      <h1>How to Create CSS Card [easy]</h1>
+      <div class="info">
+          <iframe class="iframe" type="text/html" data-video="https://www.youtube.com/embed/NLJ8QAgvS4k?autoplay=1&controls=0&mute=1" src="" frameborder="0" autoplay allowfullscreen></iframe>
+          <h2>Source Code: <a href="https://codepen.io/Andres-dev/pen/YzYeLeR" >CODE PEN</a></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quaerat eos cum molestias fugit architecto.</p>
+      </div>
+  </div>
+
+
+
+<label for="pwd">Password:</label><br>
+    <input  class="as1" type="password" id="pwd" name="pwd" minlength="8"><br><br>
+
+/*
+        input[type=text],select, textarea  {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        
+        
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        .container {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+        */
+
+<div class="container">
+  <form action="/action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="email"><b>mail</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required pattern="[A-Za-z @-.]{13}" title="Three letter country code" >
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required >
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+-->
