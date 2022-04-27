@@ -6,10 +6,22 @@
 
 في بالي 
 اول صفحة ما يحتاج غير تضيف اسمك ، الثانية موقع نغس ذا https://www.w3schools.com/howto/tryw3css_templates_dark_portfolio.htm 
-الثالثة نضيف اشياء زي كذا 
+الثالثة نضيف اشياء زي كذا
+
+
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card
+
+
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_todo
+
+
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible
+
+
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup
 
 الرابعة تارك لك المساحة 👍 😊
+
+
+وذا رابط المطلوب 
+[CIT 230_Final project2022.pdf](https://github.com/Az-Abdulaziz/web/files/8577945/CIT.230_Final.project2022.pdf)
