@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://wallpapercave.com/wp/wp6425557.jpg") center center/cover;
+    margin:0;
+    background-color: #d7bc26;
+}
+
+/* <!-------------------------------- Table --------------------------------> */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #f9a347;/* #ffc62e #b4695c #f9a347 */
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+/* <!-------------------------------- list --------------------------------> */
+.ul-list{
+list-style-type:square;
+color: #111;
+}
+/* <!-------------------------------- Image  --------------------------------> */
+
+
+/* <!-------------------------------- Video --------------------------------> */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+.container:hover .card{
+    filter: blur(10px);
+}
+.container .card:hover{
+    margin-top: -15px;
+    filter: blur(0px);
+}
+.card{
+    height: 500px;
+    width: 350px;
+    margin: 20px;
+    background: url("img1.JPG") center center/cover;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 50px #444;
+    transition: 0.4s;
+}
+.card:nth-child(2){
+    background: url("img2.JPG") center center/cover;
+}
+.card:nth-child(3){
+    background: url("img3.JPG") center center/cover;
+}
+.card h1{
+    position: absolute;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px;
+    top: 310px;
+    transition: 0.8s;
+}
+.card:hover h1{
+    top: 500px;
+}
+.card .info{
+    position: absolute;
+    opacity: 0;
+    transition: 0.8s;
+    height: 500px;
+    width: 350px;
+    background: rgba(0,0,0,0.7);
+}
+.card:hover .info{
+    opacity: 1;
+}
+.card .info p{
+    padding: 10px 30px;
+    color: #fff;
+    font-weight: 400;
+}
+.card .info h2{
+    color: #fff;
+    font-weight: 400;
+    padding-top: 150px;
+    padding-left: 20px;
+    transition: 0.8s;
+}
+.card:hover .info h2{
+    padding-top: 20px;
+}
+.card .info a{
+    color: #3549fd;
+    font-weight: 400;
+    transition: 0.4s;
+}
+.card .info a:hover{
+    color: #234991;
+}
+.card .iframe{
+    width: 350px;
+    height: 300px;
+}
+
+/* <!-------------------------------- Button --------------------------------> */
+
+/* <!-------------------------------- Navigation --------------------------------> */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  .active {
+    background-color: #045aaa;
+  }
+  .text{
+      padding:20px;
+      margin-top:30px;
+      height:1500px;
+  }
+/* <!--------------------------------  --------------------------------> */
